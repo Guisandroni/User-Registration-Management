@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "97acc4b7-ca72-45c4-be96-6adc50e50110",
+      "name": "cadela",
+      "apelido": "vizinha"
+    },
+    {
+      "id": "90847800-e8a0-4b4c-90f0-3b2f3e4da90f",
+      "name": "yoshiuki",
+      "apelido": "ssss"
+    },
+    {
+      "id": "47f627a4-2f65-4303-bbd3-8ba586f2d61c",
+      "name": "gilmar",
+      "apelido": "gustavo"
+    },
+    {
+      "id": "d1270ccc-8530-44af-b22e-2ba6167cfc28",
+      "name": "gui",
+      "apelido": "vizinha"
+    },
+    {
+      "id": "2c42ed5b-d348-45ba-8e1c-fea85ba92f79",
+      "name": "aa",
+      "apelido": "aa"
+    },
+    {
+      "id": "756a039c-a399-4bca-a875-17ecccc1a4a1",
+      "name": "22",
+      "apelido": "1"
+    },
+    {
+      "id": "16e9cbcc-4ca2-4598-b239-c303be29d9d6",
+      "name": "aa",
+      "apelido": "aa"
+    },
+    {
+      "id": "7686d1c2-7734-42fc-b838-34a6c070c5ac",
+      "name": "ss",
+      "apelido": "ss"
+    },
+    {
+      "id": "0619de42-8e23-4490-9c08-ccc52f93f2e0",
+      "name": "guilherme62",
+      "apelido": "joao"
+    }
+  ]
+}
