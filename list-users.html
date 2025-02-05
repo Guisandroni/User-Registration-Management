@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Lista de Usuários</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <div class="overlay flex flex-col">
+        <header class="bg-transparent text-white p-4 shadow-md">
+            <h1 class="text-4xl font-bold text-center">Lista de Usuários</h1>
+        </header>
+        <main class="flex-grow flex items-center justify-center p-4">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+                <h2 class="text-2xl font-bold mb-6 text-center">Usuários</h2>
+                <ul id="listaUsuarios" class="list-disc pl-5 text-gray-700">
+                    <!-- Usuários serão listados aqui -->
+                </ul>
+            </div>
+        </main>
+        <footer class="bg-transparent text-white p-4 text-center">
+            <p>&copy; 2023 Gerenciamento de Usuários. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        async function carregarUsuarios() {
+            const response = await fetch('/src/server.js');
+            const users = await response.json();
+
+            const listaUsuariosElement = document.getElementById('listaUsuarios');
+            listaUsuariosElement.innerHTML = '';
+
+            usuarios.forEach(users => {
+                const li = document.createElement('li');
+                li.textContent = `name: ${users.nome}, email: ${users.email}, telefone: ${users.telefone}`;
+                listaUsuariosElement.appendChild(li);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', carregarUsuarios);
+    </script>
+</body>
+</html>

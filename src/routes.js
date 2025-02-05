@@ -30,12 +30,14 @@ export const routes = [
         path: buildRoutePatch ('/users'),
         handler:(req,res)=>{
             
-     const { name, apelido } = req.fullContent
+     const { name, email,telefone } = req.fullContent
 
      const user ={
            id: randomUUID(),
            name,
-           apelido,
+           email,
+           telefone,
+
        }
 
        database.Insert('users',user)
@@ -62,11 +64,12 @@ export const routes = [
         path: buildRoutePatch ('/users/:id'),
         handler:(req,res)=>{
            const {id} = req.params
-           const {name, apelido} = req.fullContent
+           const {name, email, telefone} = req.fullContent
 
            database.Update('users',id,{
             name,
-            apelido,
+            email,
+            telefone,
            })
            return res.writeHeader(204).end("Usuario Atualizado com sucesso")
         }
